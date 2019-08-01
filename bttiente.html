@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<form>
+    <span>Amount: </span><input id="soTien" value="">
+    <span>From: </span>
+    <select id="from">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.85">EU</option>
+    </select>
+    <span>To: </span>
+    <select id="to">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.85">EU</option>
+    </select>
+    <button type="button" onclick="convert()">Convert</button>
+</form>
+<p id="skull">Result: </p>
+<script>
+    let amount = document.getElementById("soTien");
+    let from = document.getElementById("from");
+    let to = document.getElementById("to");
+    function convert() {
+        let ketQua = Number(amount.value) * Number(to.value) / Number(from.value);
+        document.getElementById("skull").innerHTML= "Result: " + ketQua;
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
